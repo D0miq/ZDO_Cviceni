@@ -18,6 +18,7 @@ plt.imshow(spek)
 def createcirclemask(center, radius):
     return (x - center[0]) ** 2 + (y - center[1]) ** 2 < radius ** 2
 
+
 x, y = np.indices(clown.shape)
 mask = createcirclemask((135, 126), 5)
 mask2 = createcirclemask((123, 189), 10)
